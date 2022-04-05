@@ -5,26 +5,38 @@
     <title>CapTaxi</title>
   
 </head>
-<body>   
-    <header class="menu" background-color: #000000 > <!-- Caixa de cima do menu-->
-        <div>
-            <img src="imagens/logo.png"> 
+<body>
+     <!-- Caixa de cima do menu-->
+    <header>
+            <img src="imagens/logo.png" height="200px"> 
             </div>           
     <a href="index.html"><h1>CapTáxi</h1></a>
         <nav class="menu">
             <ul>
-                <li><a href="viajar.html">Viagens</a></li>
+                <li><a href="viajar.html">Viajar</a></li>
                 <li><a href="quemsomos.html">Quem Somos?</a></li>
+                <li><a href=".html">Área do motorista</a></li>
             </ul>
         </nav>
+
+      <!-- Login para acesso do cliente-->
+        <h3 class="titulo">Faça o Login</h3> 
+            <h3 class="titulo">Entre com seu nome de usuário e senha!</h3>
+             <form>
+                <input type="text" placeholder="Nome">
+                <input type="password" placeholder="Senha"> 
+                <h3>Clique <button><a href="viajar.html">Aqui</a></button> para cadastrar-se!</h3>     
+           </form>
+
         <h2>Compromisso e Segurança</h2>
           
     </header>
 
+    <!-- Conteudo da caixa principal-->
     <div class="conteudo">
-        <div class="apresentacao1"> <!-- Conteudo da caixa principal-->
+        
+        <div class="texto"> 
            <h3 class="titulo">Bem vindo!</h3>
-         <div class="text">
             CapTáxi oferece viagens de Capitão Poço - Belém e municípios intermediários, 
             estamos trazendo para o mercado de transporte alternativo um serviço buscando 
             como ideal a sua satisfação, segurança e conforto, mantendo a pontualidade e 
@@ -32,32 +44,46 @@
                Especialmente para você, sua família ou empresa, serviço de qualidade, agilidade e segurança,
             além de contar com uma equipe de motoristas altamente qualificados, para maior economia, 
             ganho de tempo e agilidade em suas viagens.<br> Venha Viajar com conosco!
-            
-            <ul class="imagens">  <!-- imagens da caixa principal-->
+        </div>
+
+      <!-- imagens da caixa principal-->
+                        <ul class="imagens">  
                 <li>
-                <img src="imagens/carro1.png" class="img1" alt="" height="200px">
+                <img src="imagens/carro1.png" class="img1" alt="" height="100px">
                 <h3 class="titulo">Carros confortáveis</h3>
                 </li>
 
                  <li>
-                 <img src="img/ar.jpg" class="img1" alt="" height="150px">
+                 <img src="imagens/ar.jpg" class="img1" alt="" height="100px">
                  <h3 class="titulo">Ambiente climatizado</h3>
                 </li>
 
                  <li>
-                    <img src="img/habilitacao.jpg" class="img1" alt="" height="150px">
+                    <img src="imagens/habilitacao.jpg" class="img1" alt="" height="100px">
                     <h3 class="titulo">Motoristas Habilitados</h3>
                 </li>  
 
                     <li>
-                        <img src="img/familia.jpg" class="img1" alt="" height="150px">
+                        <img src="imagens/familia.jpg" class="img1" alt="" height="100px">
                         <h3 class="titulo">Passageiros Satisfeito </h3>
                     </li>
             </ul>
-            <h3 class="rodape">Clique <button><a href="viagens.html">Aqui</a></button> e reserve sua passagem!</h3>
-        </div>     
-    </div>
-    </div>
+            
+    
+    <!--cadastro para novos clientes-->
+     <h3 class="titulo">Novo Cliente</h3>
+     <h3 class="titulo">Insira seus dados pessoais e clique em salvar!</h3>
+         <form>
+             <input type="text" placeholder="Nome completo">
+             <input type="text" placeholder="nome de usuário">
+             <input type="number" placeholder="CPF">
+             <input type="number" placeholder="Telefone">
+             <input type="email" placeholder="E-mail">
+             <input type="password" placeholder="Nova Senha">
+             <input type="password" placeholder="Confirmar Senha">
+             <button>Salvar</button>
+         </form>
+  </div>
 
 </body>
 </html>
