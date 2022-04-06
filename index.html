@@ -8,7 +8,7 @@
 <body  class="p-3 mb-2 bg-success text-white">
 
      <!-- Caixa de cima do menu-->
-    <header>
+  
         <nav class="navbar col-12 position-fixed navbar-expand-lg navbar-light bg-warning" style="z-index:999 ;">
             <div class="container-fluid col-11 m-auto">
               <a class="navbar-brand" href="viajar.html">Início</a>
@@ -18,7 +18,7 @@
               <div class="collapse navbar-collapse" id="navbarScroll">
                 <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Viajar</a>
+                    <a class="nav-link active" aria-current="page" href="#"><button type="button" class="btn btn-success">Agendar viagem</button></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Área do motorista</a>
@@ -32,10 +32,15 @@
                       <li><a class="dropdown-item" href="#">Novo cadastro</a></li>
                     </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre nós</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Central de ajuda
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">Central de ajuda</a></li>
+                      <li><a class="dropdown-item" href="#">Sobre nós</a></li>
+                    </ul>
                   </li>
-
                 </ul>
                 <form class="d-flex">
                   <input class="form-control me-2" type="search" placeholder="motorista" aria-label="Search">
@@ -81,22 +86,94 @@
   eficiência no transporte de passageiros e encomendas.
  Especialmente para você, sua família ou empresa, contamos com uma equipe de motoristas altamente qualificados, para maior economia e agilidade em suas viagens.</p>
           
-   </header>
-
-    <!--apresentacação dos motorista-->
   
 
+    <!--vantagens de uso do serviço-->
+    <div class="p-3 mb-2 bg-warning text-dark"><h2>Benefícios para nossos clientes</h2></div>
+
+    <img src="imagens/ar.jpg" class="rounded float-start" alt="..." height="150px">
+    <img src="imagens/familia.jpg" class="rounded float-end" alt="..." height="150px">
+
+    <p class="fs-3">Carros climatizados</p>
+    <p class="fs-3">confortaveis</p>
+    <button type="button" class="btn btn-outline-info">cadastrar-se aqui!</button>
+<br><br><br>
     
  <!-- Login para acesso do cliente-->
- <h3 class="titulo">Faça o Login</h3> 
+ <div class="p-3 mb-2 bg-warning text-dark"><h2>Faça o Login</h2></div>
  <h3 class="titulo">Entre com seu nome de usuário e senha!</h3>
   <form>
-     <input type="text" placeholder="Nome">
+     <input type="text" placeholder="Nome de usuário">
      <input type="password" placeholder="Senha">
      <input class="btn btn-primary" type="button" value="Entrar">
-     <button type="button" class="btn btn-outline-info">cadastrar-se aqui!</button>
 </form>
  <!--cadastro para novos clientes-->
+ <form class="row g-3 needs-validation" novalidate>
+  <div class="col-md-4">
+    <label for="validationCustom01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustom02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+    <div class="valid-feedback">
+      Looks good!
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label for="validationCustomUsername" class="form-label">Username</label>
+    <div class="input-group has-validation">
+      <span class="input-group-text" id="inputGroupPrepend">@</span>
+      <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+      <div class="invalid-feedback">
+        Please choose a username.
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationCustom03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="invalid-feedback">
+      Please provide a valid city.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom04" class="form-label">State</label>
+    <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Choose...</option>
+      <option>...</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid state.
+    </div>
+  </div>
+  <div class="col-md-3">
+    <label for="validationCustom05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationCustom05" required>
+    <div class="invalid-feedback">
+      Please provide a valid zip.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+       Você Concorda com os termos e condições?
+      </label>
+      <div class="invalid-feedback">       
+     Você deve concordar antes de enviar.
+      </div>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+<!--   yfgfygdifysgefiuwegpi-->
     <div>
      <h3 class="titulo">Novo Cliente</h3>
      <h3 class="titulo">Insira seus dados pessoais e clique em salvar!</h3>
@@ -109,10 +186,30 @@
              <input type="password" placeholder="Nova Senha">
              <input type="password" placeholder="Confirmar Senha">
              <button type="button" class="btn btn-primary btn-lg">Salvar</button>
-         </form>
+         </form>  
   </div>
+  <div class="p-3 mb-2 bg-warning text-dark"><h2>Sobre Nós</h2></div>
+  <p class="lh-sm">Após verificarmos em um trabalho de pesquisa de campo na cidade 
+    de Capitão Poço, com os motoristas de táxis que fazem viagens na
+     rota Capitão Poço/Belém e vice-versa, e, com passageiros que viajam 
+     nessa rota, notamos que a maioria das pessoas que já fez pelo menos 
+     mais de três viagens por mês via transporte rodoviários nesta rota 
+     de Capitão Poço/Belém e que por alguns motivos, sempre se atrasam ou 
+     rderam suas viagens por falta de comunicação entre passageiros e 
+     condutores de carros de frete de passageiros, e também pela falta de 
+     informações sobre determinados locais, horários de saídas e chegadas 
+     desses veículos, assim, como informações a respeito dos motorista que 
+     estejam com vagas disponíveis em seus veículos para fazer o transporte 
+     solicitado para determinados momentos.</p>
+     <p class="lh-sm">criar um “site” que deverá abordar uma linguagem simples e 
+      direta a fim de ser compreendida por qualquer passageiro que venha por 
+      ventura solicitar o serviço de transporte.</p>
+    <p class="lh-sm"> que o “site” seja bem sucedido, ele deverá passar ao passageiro 
+        solicitante uma garantia de facilidade na navegação, onde o usuário 
+        consiga localizar o veículo, seu motorista e o local onde se encontra 
+        o veículo no instante da procura pelo solicitante facilmente.</p>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
